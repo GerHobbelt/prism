@@ -1,22 +1,38 @@
-# [Prism](http://prismjs.com/)
+Fork of [Prism](http://github.com/LeaVerou/prism) that has a *master* branch
+and can be used with [rails-assets](http://www.rails-assets.org)
 
-Prism is a lightweight, robust, elegant syntax highlighting library. It's a spin-off project from [Dabblet](http://dabblet.com/).
+## Summary of Original Project Readme
 
-You can learn more on http://prismjs.com/.
+You can learn more on [Prism](http://prismjs.com/).
 
-Why another syntax highlighter?: http://lea.verou.me/2012/07/introducing-prism-an-awesome-new-syntax-highlighter/#more-1841
+Why another syntax highlighter?:
+http://lea.verou.me/2012/07/introducing-prism-an-awesome-new-syntax-highlighter/#more-1841
 
-## Contribute to Prism!
+## Reason for the Fork
 
-Prism depends on community contributions to expand and cover a wider array of use cases. If you like it, considering giving back by sending a pull request. Here are a few tips:
+The service [rails-assets](http://www.rails-assets.org) looks for a master
+branch to create the wrapping gem of a bower package.  The [original
+repo](http://github.com/LeaVerou/prism) has only one branch available
+**gh-pages**, therefore it is not possible to use
+[rails-assets](http://www.rails-assets.org) to generate a gem from the bower
+package defined in the project.
 
-- Read the [documentation](http://prismjs.com/extending.html). Prism was designed to be extensible.
-- Do not edit prism.js, it’s just the version of Prism used by the Prism website and is built automatically. Limit your changes to the unminified files in the components/ folder. The minified files are also generated automatically.
-- Currently the build system building prism.js and the minified files is just a bunch of local settings in CodeKit. If someone wants to help export them to a config file, please contact me by opening an issue.
-- Please follow the code conventions used in the files already. For example, I use [tabs for indentation and spaces for alignment](http://lea.verou.me/2012/01/why-tabs-are-clearly-superior/). Opening braces are on the same line, closing braces on their own line regardless of construct. There is a space before the opening brace. etc etc.
-- Please try to err towards more smaller PRs rather than few huge PRs. If a PR includes changes I want to merge and changes I don't, handling it becomes difficult.
-- My time is very limited these days, so it might take a long time to review longer PRs (short ones are usually merged very quickly), especially those modifying the Prism Core. This doesn't mean your PR is rejected.
-- If you contribute a new language definition, you will be responsible for handling bug reports about that language definition. Soon I plan to add usernames of project owners for themes, plugins and language definitions so this becomes more clear to users.
-- If you add a new language definition, theme or plugin, you need to add it to `components.js` as well, so that it becomes available to the download build page.
+Since there were several issues open with no further action in the direction
+of providing a **master** branch:
 
-Thank you so much for contributing!!
+LeaVerou/prism/#342
+LeaVerou/prism/#276
+LeaVerou/prism/#180
+
+This fork provides a master branch and bower with css for plugins.
+
+## Locate at rails-assets
+
+In rails-assets the component name is **asquera--prism**.
+
+## Changes
+
+1. Created a **master** branch
+2. Added plugins' css files (not included in the original bower package
+   definition)
+2. Removed unused themes css, using the default.

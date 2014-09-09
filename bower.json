@@ -1,6 +1,6 @@
 {
-  "name": "prism",
-  "version": "0.0.5",
+  "name": "asquera-prism",
+  "version": "0.0.8",
   "main": [
       "prism.js",
       "prism.css",
@@ -14,9 +14,9 @@
       "plugins/show-language/prism-show-language.min.css",
       "plugins/wpd/prism-wpd.css"
   ],
-  "homepage": "http://prismjs.com",
+  "homepage": "https://github.com/Asquera/prism",
   "authors": "Lea Verou",
-  "description": "Lightweight, robust, elegant syntax highlighting. A spin-off project from Dabblet.",
+  "description": "fork from prism project by Lea Verou",
   "license": "MIT",
   "ignore": [
     "img",
