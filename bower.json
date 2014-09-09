@@ -4,6 +4,12 @@
   "main": [
       "prism.js",
       "prism.css",
+      "prism-coy.css",
+      "prism-dark.css",
+      "prism-funky.css",
+      "prism-okaidia.css",
+      "prism-tomorrow.css",
+      "prism-twilight.css",
       "plugins/autolinker/prism-autolinker.css",
       "plugins/ie8/prism-ie8.css",
       "plugins/line-highlight/prism-line-highlight.css",
