@@ -1,10 +1,17 @@
 {
   "name": "prism",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "main": [
       "prism.js",
       "prism.css",
-      "plugins/**/*.css"
+      "plugins/autolinker/prism-autolinker.css",
+      "plugins/ie8/prism-ie8.css",
+      "plugins/line-highlight/prism-line-highlight.css",
+      "plugins/line-numbers/prism-line-numbers.css",
+      "plugins/show-invisibles/prism-show-invisibles.css",
+      "plugins/show-language/prism-show-language.css",
+      "plugins/show-language/prism-show-language.min.css",
+      "plugins/wpd/prism-wpd.css"
   ],
   "homepage": "http://prismjs.com",
   "authors": "Lea Verou",
