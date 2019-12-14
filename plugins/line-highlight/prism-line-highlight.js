@@ -59,7 +59,8 @@
 		var parseMethod = isLineHeightRounded() ? parseInt : parseFloat;
 		var lineHeight = parseMethod(getComputedStyle(pre).lineHeight);
 		var hasLineNumbers = hasClass(pre, 'line-numbers');
-		var parentElement = hasLineNumbers ? pre : pre.querySelector('code') || pre;
+		// var parentElement = hasLineNumbers ? pre : pre.querySelector('code') || pre;
+		var parentElement = pre;
 		var mutateActions = /** @type {(() => void)[]} */ ([]);
 
 		ranges.forEach(function (currentRange) {
