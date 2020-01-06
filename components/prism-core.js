@@ -1,3 +1,5 @@
+console.log("PRISM-CORE start")
+
 var _self = (typeof window !== 'undefined')
 	? window   // if in browser
 	: (
@@ -619,3 +621,5 @@ if (typeof module !== 'undefined' && module.exports) {
 if (typeof global !== 'undefined') {
 	global.Prism = Prism;
 }
+
+console.log("PRISM-CORE end")

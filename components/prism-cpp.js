@@ -1,3 +1,6 @@
+console.log("PRISM-CPP start")
+
+
 Prism.languages.cpp = Prism.languages.extend('c', {
 	'class-name': {
 		pattern: /(\b(?:class|enum|struct)\s+)\w+/,
@@ -19,3 +22,5 @@ Prism.languages.insertBefore('cpp', 'string', {
 		greedy: true
 	}
 });
+
+console.log("PRISM-CPP done")

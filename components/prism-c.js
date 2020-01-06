@@ -1,3 +1,5 @@
+console.log("PRISM-C start")
+
 Prism.languages.c = Prism.languages.extend('clike', {
 	'class-name': {
 		pattern: /(\b(?:enum|struct)\s+)\w+/,
@@ -34,3 +36,5 @@ Prism.languages.insertBefore('c', 'string', {
 });
 
 delete Prism.languages.c['boolean'];
+
+console.log("PRISM-C done")

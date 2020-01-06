@@ -1,3 +1,5 @@
+console.log("PRISM Markup start")
+
 Prism.languages.markup = {
 	'comment': /<!--[\s\S]*?-->/,
 	'prolog': /<\?[\s\S]+?\?>/,
@@ -36,18 +38,18 @@ Prism.languages.markup = {
 					'namespace': /^[^\s>\/:]+:/
 				}
 			}
-
+			
 		}
 	},
 	'entity': /&#?[\da-z]{1,8};/i
 };
 
 Prism.languages.markup['tag'].inside['attr-value'].inside['entity'] =
-	Prism.languages.markup['entity'];
+Prism.languages.markup['entity'];
 
 // Plugin to make entity title show the real entity, idea by Roman Komarov
 Prism.hooks.add('wrap', function(env) {
-
+	
 	if (env.type === 'entity') {
 		env.attributes['title'] = env.content.replace(/&amp;/, '&');
 	}
@@ -73,7 +75,7 @@ Object.defineProperty(Prism.languages.markup.tag, 'addInlined', {
 			inside: Prism.languages[lang]
 		};
 		includedCdataInside['cdata'] = /^<!\[CDATA\[|\]\]>$/i;
-
+		
 		var inside = {
 			'included-cdata': {
 				pattern: /<!\[CDATA\[[\s\S]*?\]\]>/i,
@@ -84,7 +86,7 @@ Object.defineProperty(Prism.languages.markup.tag, 'addInlined', {
 			pattern: /[\s\S]+/,
 			inside: Prism.languages[lang]
 		};
-
+		
 		var def = {};
 		def[tagName] = {
 			pattern: RegExp(/(<__[\s\S]*?>)(?:<!\[CDATA\[[\s\S]*?\]\]>\s*|[\s\S])*?(?=<\/__>)/.source.replace(/__/g, tagName), 'i'),
@@ -92,7 +94,7 @@ Object.defineProperty(Prism.languages.markup.tag, 'addInlined', {
 			greedy: true,
 			inside: inside
 		};
-
+		
 		Prism.languages.insertBefore('markup', 'cdata', def);
 	}
 });
@@ -101,3 +103,5 @@ Prism.languages.xml = Prism.languages.extend('markup', {});
 Prism.languages.html = Prism.languages.markup;
 Prism.languages.mathml = Prism.languages.markup;
 Prism.languages.svg = Prism.languages.markup;
+
+console.log("PRISM Markup end")
