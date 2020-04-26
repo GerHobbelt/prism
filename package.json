@@ -5,6 +5,7 @@
   "main": "prism.js",
   "style": "themes/prism.css",
   "scripts": {
+    "pub": "npm publish --access public",
     "test:aliases": "mocha tests/aliases-test.js",
     "test:contrast": "mocha tests/contrast-test.js",
     "test:core": "mocha tests/core/**/*.js",
