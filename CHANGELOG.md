@@ -1,5 +1,52 @@
 # Prism Changelog
 
+## 1.20.1-1
+
+### New components
+
+* __Structured Text (IEC 61131-3)__: Added support for Structured Text (IEC 61131-3) (#2311) [`8704cdfb`](https://github.com/PrismJS/prism/commit/8704cdfb)
+
+### Updated components
+
+* __Bash__
+    * Added `composer` command (#2298) [`044dd271`](https://github.com/PrismJS/prism/commit/044dd271)
+* __Diff__
+    * Added `prefix` token (#2281) [`fd432a5b`](https://github.com/PrismJS/prism/commit/fd432a5b)
+* __EJS__
+    * Added `eta` alias (#2282) [`0cfb6c5f`](https://github.com/PrismJS/prism/commit/0cfb6c5f)
+* __Java__
+    * Fixed `namespace` token (#2295) [`62e184bb`](https://github.com/PrismJS/prism/commit/62e184bb)
+* __Scheme__
+    * Improvements (#2263) [`9a49f78f`](https://github.com/PrismJS/prism/commit/9a49f78f)
+* __TypeScript__
+    * Added `asserts` keyword and other improvements (#2280) [`a197cfcd`](https://github.com/PrismJS/prism/commit/a197cfcd)
+
+### Updated plugins
+
+* __Autoloader__
+    * Improved path detection and other minor improvements (#2245) [`5cdc3251`](https://github.com/PrismJS/prism/commit/5cdc3251)
+* __Command Line__
+    * Correctly rehighlight elements (#2291) [`e6b2c6fc`](https://github.com/PrismJS/prism/commit/e6b2c6fc)
+* __Line Numbers__
+    * Exposed `_resizeElement` function (#2288) [`893f2a79`](https://github.com/PrismJS/prism/commit/893f2a79)
+
+### Updated themes
+
+
+### Other
+
+* __Infrastructure__
+	* make the color contrast reports WARNINGS instead of fatal errors during `npm test` runs. [`62d1dcd6`](https://github.com/PrismJS/prism/commit/62d1dcd6)
+	* Merge remote-tracking branch 'remotes/RunDevelopment/contrast-test' [`f2bad45b`](https://github.com/PrismJS/prism/commit/f2bad45b)
+	* Fixed several cases of exponential backtracking (#2268) [`7a554b5f`](https://github.com/PrismJS/prism/commit/7a554b5f)
+	* Added a test for color contrast [`e483e5bd`](https://github.com/PrismJS/prism/commit/e483e5bd)
+	* gulp: Improved `inlineRegexSource` (#2296) [`abb800dd`](https://github.com/PrismJS/prism/commit/abb800dd)
+	* gulp: Fixed language map (#2283) [`11053193`](https://github.com/PrismJS/prism/commit/11053193)
+    * `npm run pub` task [`6f13661d`](https://github.com/PrismJS/prism/commit/6f13661d)
+    * made this a scoped package and bumped the build revision [`3346d1e1`](https://github.com/PrismJS/prism/commit/3346d1e1)
+    * updated npm packages [`6cdda4cd`](https://github.com/PrismJS/prism/commit/6cdda4cd)
+
+
 ## 1.20.0 (TBD)
 
 ### New components
