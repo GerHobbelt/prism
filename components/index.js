@@ -53,4 +53,8 @@ function loadLanguages(languages) {
  */
 loadLanguages.silent = false;
 
+loadLanguages.getSupportedLanguages = function () {
+	return loadedLanguages;
+};
+
 module.exports = loadLanguages;
