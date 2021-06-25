@@ -30,7 +30,7 @@
 		},
 		'function': /\b[a-z_]\w+(?=\s*\()/i,
 		'keyword': /\b(?:and|as|by|else|for|if|import|in|is|loop|not|or|recursive|with|without)\b/,
-		'operator': /[-+*/%=]=?|!=|\*\*?=?|\/\/?=?|<[<=>]?|>[=>]?|[&|^~]/,
+		'operator': /[-+%=]=?|!=|\*\*?=?|\/\/?=?|<[<=>]?|>[=>]?|[&|^~]/,
 		'number': /\b\d+(?:\.\d+)?\b/,
 		'boolean': /[Tt]rue|[Ff]alse|[Nn]one/,
 		'variable': /\b\w+?\b/,
@@ -57,4 +57,4 @@
 		markupTemplating.tokenizePlaceholders(env, 'jinja2');
 	});
 
-})(Prism);
+}(Prism));
