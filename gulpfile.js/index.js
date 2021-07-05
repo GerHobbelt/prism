@@ -59,7 +59,7 @@ function inlineRegexSource() {
 function minifyJS() {
 	return [
 		inlineRegexSource(),
-		uglify()
+		//uglify()
 	];
 }
 
@@ -81,7 +81,7 @@ function build(cb) {
 
 async function componentsJsonToJs() {
 	const data = await componentsPromise;
-	const js = `var components = ${JSON.stringify(data)};
+	const js = `var components = ${JSON.stringify(data, null, 2)};
 if (typeof module !== 'undefined' && module.exports) { module.exports = components; }`;
 	return util.promisify(fs.writeFile)(paths.componentsFileJS, js);
 }
